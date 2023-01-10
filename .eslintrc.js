@@ -4,17 +4,13 @@ module.exports = {
         browser: true,
         es2021: true,
     },
-    extends: [
-        "eslint:recommended",
-        "plugin:react/recommended",
-        "plugin:react/jsx-runtime",
-    ],
+    extends: ["eslint:recommended", "plugin:react/recommended", "plugin:react/jsx-runtime"],
     overrides: [],
     parserOptions: {
         ecmaVersion: "latest",
         sourceType: "module",
     },
-    plugins: ["react"],
+    plugins: ["react", "prettier"],
     rules: {
         indent: ["error", 4],
         "linebreak-style": ["error", "unix"],
@@ -23,9 +19,9 @@ module.exports = {
         "react/jsx-uses-react": "error",
         "react/jsx-uses-vars": "error",
     },
-    "settings": {
-        "react": {
-            "version": "detect"
-        }
-    }
+    settings: {
+        react: {
+            version: "detect",
+        },
+    },
 };
